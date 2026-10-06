@@ -1,0 +1,38 @@
+name: Import prologue scene01 images
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/import-prologue-scene01.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download sheet thumbnails
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p prologue
+          curl -L --fail --retry 3 'https://oaisdmntprseasia.blob.core.windows.net/files/00000000-7a4c-8207-9fe5-b0d83211a098/raw?se=2026-10-06T07%3A32%3A04Z&sp=r&sv=2026-02-06&sr=b&scid=b8179180-f338-4ab7-8c07-74aa826cbbb1&skoid=0b778285-7b0b-4cdc-ac3b-fb93e8c3686f&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-10-06T02%3A55%3A48Z&ske=2026-10-07T02%3A55%3A48Z&sks=b&skv=2026-02-06&sig=BFdcYPHUiWNJmUpF2tFePb%2BJGrPFhPUkxopqsjJKZQg%3D' -o prologue/scene01_cut_01.png
+          curl -L --fail --retry 3 'https://oaisdmntprseasia.blob.core.windows.net/files/00000000-0b68-8207-b6bb-3726598180e2/raw?se=2026-10-06T07%3A32%3A04Z&sp=r&sv=2026-02-06&sr=b&scid=b8179180-f338-4ab7-8c07-74aa826cbbb1&skoid=0b778285-7b0b-4cdc-ac3b-fb93e8c3686f&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-10-06T01%3A50%3A29Z&ske=2026-10-07T01%3A50%3A29Z&sks=b&skv=2026-02-06&sig=L6qhm/G3fmrZbO16k4JZB%2BNZ1T6hO3Q6lCcAggOtwkc%3D' -o prologue/scene01_cut_02.png
+          curl -L --fail --retry 3 'https://oaisdmntprkoreacentral.blob.core.windows.net/files/00000000-b43c-8206-a85d-1acff9e5458d/raw?se=2026-10-06T07%3A32%3A04Z&sp=r&sv=2026-02-06&sr=b&scid=b8179180-f338-4ab7-8c07-74aa826cbbb1&skoid=0b778285-7b0b-4cdc-ac3b-fb93e8c3686f&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-10-06T02%3A02%3A36Z&ske=2026-10-07T02%3A02%3A36Z&sks=b&skv=2026-02-06&sig=dQJJ9QYzZ8cFQG3KyYchd6FTQgtJ/xOBz9Kyn2Jc0zQ%3D' -o prologue/scene01_cut_03.png
+          curl -L --fail --retry 3 'https://oaisdmntprwestus3.blob.core.windows.net/files/00000000-9dd4-81fd-877e-0b288bfba413/raw?se=2026-10-06T07%3A32%3A04Z&sp=r&sv=2026-02-06&sr=b&scid=b8179180-f338-4ab7-8c07-74aa826cbbb1&skoid=0b778285-7b0b-4cdc-ac3b-fb93e8c3686f&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-10-06T02%3A03%3A41Z&ske=2026-10-07T02%3A03%3A41Z&sks=b&skv=2026-02-06&sig=l08LTQiZPGj0n9y8NjT5TywIT7syKUGPwXTIl%2B9aL2E%3D' -o prologue/scene01_cut_04.png
+          test -s prologue/scene01_cut_01.png
+          test -s prologue/scene01_cut_02.png
+          test -s prologue/scene01_cut_03.png
+          test -s prologue/scene01_cut_04.png
+      - name: Commit images
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add prologue/scene01_cut_01.png prologue/scene01_cut_02.png prologue/scene01_cut_03.png prologue/scene01_cut_04.png
+          git commit -m "Import prologue scene01 images for spreadsheet" || exit 0
+          git push
