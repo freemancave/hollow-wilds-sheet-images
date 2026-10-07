@@ -1,0 +1,39 @@
+name: Publish scene01 images
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/publish-scene01-images.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download exported images
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl -L --fail --retry 3 'https://sdmntprjapaneast.oaiusercontent.com/files/00000000-4108-8209-b288-a49679477394/raw?se=2026-10-07T16%3A33%3A43Z&sp=r&sv=2026-02-06&sr=b&scid=64c7463c-f695-52da-aa69-2942a473b657&skoid=0b778285-7b0b-4cdc-ac3b-fb93e8c3686f&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-10-07T02%3A24%3A36Z&ske=2026-10-08T02%3A24%3A36Z&sks=b&skv=2026-02-06&sig=cEJwbRkA4pXD6b/Sb0VNjNbUjy0wk%2BpTHdjQuSqS2fY%3D' -o /tmp/scene01.zip
+          rm -rf /tmp/scene01
+          mkdir -p /tmp/scene01
+          unzip -q /tmp/scene01.zip -d /tmp/scene01
+          find /tmp/scene01 -maxdepth 4 -type f -print
+          mkdir -p prologue
+          cp /tmp/scene01/assets/prologue/scene01/cut_01.png prologue/scene01_cut_01.png
+          cp /tmp/scene01/assets/prologue/scene01/cut_02.png prologue/scene01_cut_02.png
+          cp /tmp/scene01/assets/prologue/scene01/cut_03.png prologue/scene01_cut_03.png
+          cp /tmp/scene01/assets/prologue/scene01/cut_04.png prologue/scene01_cut_04.png
+          cp /tmp/scene01/assets/prologue/scene01/cut_05.png prologue/scene01_cut_05.png
+      - name: Commit public sheet images
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add prologue/scene01_cut_01.png prologue/scene01_cut_02.png prologue/scene01_cut_03.png prologue/scene01_cut_04.png prologue/scene01_cut_05.png
+          git commit -m "Update prologue scene 1 sheet images" || exit 0
+          git push
