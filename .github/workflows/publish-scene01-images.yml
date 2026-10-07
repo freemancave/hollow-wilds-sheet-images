@@ -24,11 +24,11 @@ jobs:
           unzip -q /tmp/scene01.zip -d /tmp/scene01
           find /tmp/scene01 -maxdepth 4 -type f -print
           mkdir -p prologue
-          cp /tmp/scene01/assets/prologue/scene01/cut_01.png prologue/scene01_cut_01.png
-          cp /tmp/scene01/assets/prologue/scene01/cut_02.png prologue/scene01_cut_02.png
-          cp /tmp/scene01/assets/prologue/scene01/cut_03.png prologue/scene01_cut_03.png
-          cp /tmp/scene01/assets/prologue/scene01/cut_04.png prologue/scene01_cut_04.png
-          cp /tmp/scene01/assets/prologue/scene01/cut_05.png prologue/scene01_cut_05.png
+          cp /tmp/scene01/cut_01.png prologue/scene01_cut_01.png
+          cp /tmp/scene01/cut_02.png prologue/scene01_cut_02.png
+          cp /tmp/scene01/cut_03.png prologue/scene01_cut_03.png
+          cp /tmp/scene01/cut_04.png prologue/scene01_cut_04.png
+          cp /tmp/scene01/cut_05.png prologue/scene01_cut_05.png
       - name: Commit public sheet images
         shell: bash
         run: |
