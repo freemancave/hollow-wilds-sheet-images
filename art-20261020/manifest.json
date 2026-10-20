@@ -1,0 +1,219 @@
+[
+  {
+    "key": "hero-concept",
+    "source": "docs/work_history/captures/2026-10-18-protagonist-cloth-followup/reference-concept.png",
+    "public_path": "art-20261020/hero-concept.png",
+    "sha256": "56c8437fd51ee81f43bdbb187517a53cba988c106675924fb6dcdfa4db731d1b",
+    "bytes": 1935512
+  },
+  {
+    "key": "hero-body-concept",
+    "source": "docs/work_history/captures/2026-10-16-protagonist-whole-body/fullbody-apose-four-views.png",
+    "public_path": "art-20261020/hero-body-concept.png",
+    "sha256": "ff633863fc698c06163546a6e27371665caa3233a08d885995841c361278beb7",
+    "bytes": 1717198
+  },
+  {
+    "key": "hero-upper-concept",
+    "source": "docs/work_history/captures/2026-10-17-protagonist-upper/upper-a-pose-reference.png",
+    "public_path": "art-20261020/hero-upper-concept.png",
+    "sha256": "327b347cf73931ef1746629845da16779e0d6b77253f3b77fb33c24514f9dc96",
+    "bytes": 1721252
+  },
+  {
+    "key": "hero-lower-concept",
+    "source": "docs/work_history/captures/2026-10-17-protagonist-lower/lower-reference.png",
+    "public_path": "art-20261020/hero-lower-concept.png",
+    "sha256": "22d4b4bc79937ab172e5377ee2f893924373796857695fd52bb6eb972e5b9b70",
+    "bytes": 1851013
+  },
+  {
+    "key": "hero-shoes-concept",
+    "source": "docs/work_history/captures/2026-10-17-protagonist-footwear/footwear-reference.png",
+    "public_path": "art-20261020/hero-shoes-concept.png",
+    "sha256": "62a44c1f317a509b39162550bd4e477307999247c3c07c14945f5f7a9b3286eb",
+    "bytes": 1754323
+  },
+  {
+    "key": "hero-backpack-concept",
+    "source": "docs/work_history/captures/2026-10-17-protagonist-backpack/backpack-reference.png",
+    "public_path": "art-20261020/hero-backpack-concept.png",
+    "sha256": "65dbda83a30ca3ff9acfe13c2f99ee5ea2f54778dd9dedede646a4f5017e9ba5",
+    "bytes": 1827246
+  },
+  {
+    "key": "hero-body-mesh",
+    "source": "docs/work_history/captures/2026-10-17-protagonist-body-rig/01-rest-front.png",
+    "public_path": "art-20261020/hero-body-mesh.png",
+    "sha256": "255d73bf718ee8f1751c11b4a491f092b3d49bfdf2508566480c16a4db872aa0",
+    "bytes": 168182
+  },
+  {
+    "key": "hero-front",
+    "source": "docs/work_history/captures/2026-10-18-protagonist-cloth-followup/idle-front.png",
+    "public_path": "art-20261020/hero-front.png",
+    "sha256": "a20089892680524421f2a2004ca96f48a1e4a16bf89dd800f3a5e53fee13f991",
+    "bytes": 204670
+  },
+  {
+    "key": "hero-side",
+    "source": "docs/work_history/captures/2026-10-18-protagonist-cloth-followup/idle-side.png",
+    "public_path": "art-20261020/hero-side.png",
+    "sha256": "b60e484772240e7cacf8e03c2e32c77131a5f6bd26e79afcba78cbb28b60e0be",
+    "bytes": 170426
+  },
+  {
+    "key": "hero-back",
+    "source": "docs/work_history/captures/2026-10-18-protagonist-cloth-followup/idle-back.png",
+    "public_path": "art-20261020/hero-back.png",
+    "sha256": "f841c1d19fce5e25ebeb3057cde9a0b2feb93c6e0ec59649247c7b640608563f",
+    "bytes": 187249
+  },
+  {
+    "key": "hero-lumen-set",
+    "source": "docs/work_history/captures/2026-10-19-lumen-set/renders/lumen-idle-0.png",
+    "public_path": "art-20261020/hero-lumen-set.png",
+    "sha256": "697bdd2d41da1c2e4deeded595979a42f83f52df38c50883a7d2e325f3bd8f16",
+    "bytes": 248394
+  },
+  {
+    "key": "hero-simia-set",
+    "source": "docs/work_history/captures/2026-10-19-simia-set/renders/simia-idle-0.png",
+    "public_path": "art-20261020/hero-simia-set.png",
+    "sha256": "88af56bc3e88033d05bcf01c55bb694776240ba0f7edf413ac5d7627d18e91f2",
+    "bytes": 274391
+  },
+  {
+    "key": "peb-concept",
+    "source": "docs/work_history/captures/2026-10-16-peb-concept/user-peb-reference.png",
+    "public_path": "art-20261020/peb-concept.png",
+    "sha256": "34c87c233824a82326bbfa7a741d48fa3d81eaeb5a6a08bb07b87377692b6cb3",
+    "bytes": 1799371
+  },
+  {
+    "key": "peb-apose-concept",
+    "source": "docs/work_history/captures/2026-10-18-peb-rig-followup/peb-apose-reference.png",
+    "public_path": "art-20261020/peb-apose-concept.png",
+    "sha256": "d56c438ab44076b5b9cc751d7fae06156634f24ebe05d819b5424625ca45d61b",
+    "bytes": 1405315
+  },
+  {
+    "key": "peb-mouth-concept",
+    "source": "docs/work_history/captures/2026-10-18-peb-mouth-concept/peb-mouth-concept.png",
+    "public_path": "art-20261020/peb-mouth-concept.png",
+    "sha256": "1eb22d7d172378dad6dcee7c553779fb7f22e1fcc295af5d12f7b60a8485df8b",
+    "bytes": 2233999
+  },
+  {
+    "key": "peb-front",
+    "source": "docs/work_history/captures/2026-10-18-peb-bill-volume/closed-0.png",
+    "public_path": "art-20261020/peb-front.png",
+    "sha256": "e22ca183c9cc5c43e40a7b644b7cec8c887b65a51d908b89f9543d80d3271ff7",
+    "bytes": 561145
+  },
+  {
+    "key": "peb-side",
+    "source": "docs/work_history/captures/2026-10-18-peb-bill-volume/closed-90.png",
+    "public_path": "art-20261020/peb-side.png",
+    "sha256": "fe6714b3e36259b6be4fdb50439e6f586f06282421082917fb37564a707ffe43",
+    "bytes": 466736
+  },
+  {
+    "key": "peb-back",
+    "source": "docs/work_history/captures/2026-10-18-peb-surface-followup/after/idle-180.png",
+    "public_path": "art-20261020/peb-back.png",
+    "sha256": "15fc827031dacfe84aafd23213f6916548e1a1f12ee5036ec714f9b4f5c43ae7",
+    "bytes": 333603
+  },
+  {
+    "key": "peb-mouth-open",
+    "source": "docs/work_history/captures/2026-10-18-peb-bill-volume/open-45.png",
+    "public_path": "art-20261020/peb-mouth-open.png",
+    "sha256": "bae29b1c11d6ff4e587a5e74a906b1fdd49295ec731213c62398684afb0d0c18",
+    "bytes": 502529
+  },
+  {
+    "key": "peb-fruit-hold",
+    "source": "docs/work_history/captures/2026-10-18-peb-bill-volume/hold-45.png",
+    "public_path": "art-20261020/peb-fruit-hold.png",
+    "sha256": "b070ed35886387973ce8d67d9085aba8fbfefc203ad237c311af2750cdc627c9",
+    "bytes": 506313
+  },
+  {
+    "key": "lumen-head",
+    "source": "docs/work_history/captures/2026-10-19-lumen-set/renders/slot-3217.png",
+    "public_path": "art-20261020/lumen-head.png",
+    "sha256": "03f41763df283345b303aa9fc0388962aef410214259c01e72d671ff572408cf",
+    "bytes": 161234
+  },
+  {
+    "key": "lumen-upper",
+    "source": "docs/work_history/captures/2026-10-19-lumen-set/renders/slot-3215.png",
+    "public_path": "art-20261020/lumen-upper.png",
+    "sha256": "4bbcad4d636c8e11983eb5e6081c0bd2eaf9093d1274f875d29d4cd9c9827547",
+    "bytes": 160948
+  },
+  {
+    "key": "lumen-lower",
+    "source": "docs/work_history/captures/2026-10-19-lumen-set/renders/slot-3216.png",
+    "public_path": "art-20261020/lumen-lower.png",
+    "sha256": "e60290930a71641958f15cb1bb111e7c4ff2caeaedba9df23b7e425af4c07991",
+    "bytes": 142356
+  },
+  {
+    "key": "lumen-shoes",
+    "source": "docs/work_history/captures/2026-10-19-lumen-set/renders/slot-3218.png",
+    "public_path": "art-20261020/lumen-shoes.png",
+    "sha256": "95ffe1a2f1389c721570e3c1b6324f433ea615f35bab70d5a747a8310cea32fe",
+    "bytes": 157753
+  },
+  {
+    "key": "simia-head",
+    "source": "docs/work_history/captures/2026-10-19-simia-set/renders/slot-3219.png",
+    "public_path": "art-20261020/simia-head.png",
+    "sha256": "3c8db0b664eaa797c6acf612c2359fa68b05c1bf43f436cb9a2e229598d5ad47",
+    "bytes": 140867
+  },
+  {
+    "key": "simia-upper",
+    "source": "docs/work_history/captures/2026-10-19-simia-set/renders/slot-3220.png",
+    "public_path": "art-20261020/simia-upper.png",
+    "sha256": "62308155b3f7abb2378845dae93ba80af7d99a0d9458f8b73476d98551bab597",
+    "bytes": 160881
+  },
+  {
+    "key": "simia-lower",
+    "source": "docs/work_history/captures/2026-10-19-simia-set/renders/slot-3221.png",
+    "public_path": "art-20261020/simia-lower.png",
+    "sha256": "9b593e0a2f169237df8d0dea1efe15d0dca09d5fb19b2f81233909c127c6b2d9",
+    "bytes": 171414
+  },
+  {
+    "key": "simia-shoes",
+    "source": "docs/work_history/captures/2026-10-19-simia-set/renders/slot-3222.png",
+    "public_path": "art-20261020/simia-shoes.png",
+    "sha256": "18d451db164b5a69f040434ed1c26635ef0007e4e15faf52a17c50ef7a61674d",
+    "bytes": 151890
+  },
+  {
+    "key": "simia-belt",
+    "source": "docs/work_history/captures/2026-10-19-simia-set/renders/slot-3224.png",
+    "public_path": "art-20261020/simia-belt.png",
+    "sha256": "ebdaab8842aba68a6071bb22c760c248a0a239f31fca0f4936040bb88b6e0394",
+    "bytes": 129484
+  },
+  {
+    "key": "simia-backpack",
+    "source": "docs/work_history/captures/2026-10-19-simia-set/renders/slot-3223.png",
+    "public_path": "art-20261020/simia-backpack.png",
+    "sha256": "3d2e8d78ddf7b5abe3ad41cbdf265208bc10e7969c5e877e519498881d8326a3",
+    "bytes": 137991
+  },
+  {
+    "key": "waist-light",
+    "source": "docs/work_history/captures/2026-10-19-simia-set/renders/slot-3225.png",
+    "public_path": "art-20261020/waist-light.png",
+    "sha256": "227682e9ed06bb15f7d619db1500fd6092f47e12722abc89c02f53c57d4609d9",
+    "bytes": 135727
+  }
+]
